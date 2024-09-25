@@ -15,13 +15,13 @@
         <form action="respuestaform.html" method="post">
 
             <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" required><br><br>
+            <input type="text" id="asunto" name="asunto" required><br><br>
         
             <label for="comentario">Comentario o pregunta:</label>
-            <textarea id="comentario" rows="4" cols="50" required></textarea><br><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
         
             <label for="yosoy">Yo soy:</label>
-            <select id="yosoy" required>
+            <select id="yosoy" name="yosoy" required>
                 <option value="">Seleccione una opción</option>
                 <option value="paciente">Paciente</option>
                 <option value="cientifico">Científico</option>
@@ -32,7 +32,7 @@
             </select><br><br>
         
             <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fecha_nacimiento"><br><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
         
             <label>Sexo:</label>
             <input type="radio" id="hombre" name="sexo" value="hombre">
@@ -43,9 +43,9 @@
             <label for="otro">Otro</label><br><br>
         
             <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" required><br><br>
+            <input type="email" id="correo" name="correo" required><br><br>
         
-            <input type="checkbox" id="mas_info">
+            <input type="checkbox" id="mas_info" name="mas_info">
             <label for="mas_info">Deseo recibir más información</label><br><br>
         
             <input type="submit" value="Enviar">
