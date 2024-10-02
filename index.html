@@ -57,14 +57,20 @@
         <!-- Articulaciones - Imagen interactiva -->
         <article>
             <h3>Articulaciones</h3>
-            <img src="imgagenes/persona.jpg" alt="Cuerpo humano" usemap="#cuerpo-map" width="500" height="800">
             <p>Haz clic en una articulación del cuerpo para obtener más información.</p>
+            <img src="imagenes/persona.jpg" alt="Cuerpo humano" usemap="#cuerpo-map" width="600" height="1200">
             <map name="cuerpo-map">
-                <area shape="rect" coords="130,50,260,150" alt="Hombro" href="articulos/hombro.html">
-                <area shape="rect" coords="130,200,260,300" alt="Codo" href="articulos/codo.html">
-                <area shape="rect" coords="140,350,250,450" alt="Muñeca" href="articulos/muneca.html">
-                <area shape="rect" coords="130,600,260,700" alt="Rodilla" href="articulos/rodilla.html">
-                <area shape="rect" coords="140,750,250,850" alt="Tobillo" href="articulos/tobillo.html">
+                <!-- Rectángulos -->
+                <area shape="rect" coords="190,75,380,225" alt="Hombro" href="articulos/hombro.html">
+                <area shape="rect" coords="190,900,380,1050" alt="Rodilla" href="articulos/rodilla.html">
+
+                <!-- Círculos -->
+                <area shape="circle" coords="290,195,75" alt="Cabeza" href="articulos/cabeza.html">
+                <area shape="circle" coords="290,1125,60" alt="Tobillo" href="articulos/tobillo.html">
+
+                <!-- Polígonos -->
+                <area shape="poly" coords="270,300,330,300,345,375,255,375" alt="Codo derecho" href="articulos/codo_derecho.html">
+                <area shape="poly" coords="270,450,330,450,345,525,255,525" alt="Codo izquierdo" href="articulos/codo_izquierdo.html">
             </map>
         </article>
 
