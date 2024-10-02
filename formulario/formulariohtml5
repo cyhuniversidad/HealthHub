@@ -52,5 +52,12 @@
 
         <input type="submit" value="Enviar">
     </form>
+
+     <a href="../index.html">Volver al índice</a>
+    
+    <footer>
+        <p>Enciclopedia Ilustrada de Salud &copy; 2024. Todos los derechos reservados por Hugo Molina y Cristian Such.</p>
+    </footer>
+
 </body>
 </html>
