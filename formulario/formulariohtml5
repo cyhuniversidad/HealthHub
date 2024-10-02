@@ -16,7 +16,7 @@
     <h2>Formulario de Síntomas</h2>
     <p>Los campos marcados con * son obligatorios.</p>
     
-    <form action="respuestaform.html" method="post">
+    <form action="respuestaform.html" method="get">
 
         <label for="nombre">Nombre completo *</label><br>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
