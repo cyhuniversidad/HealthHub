@@ -95,7 +95,7 @@ header, footer {
 }
 
 /* Estilos adicionales para elementos dentro del header y footer */
-header a, footer a {
+header h1, header a, footer a {
     color: #ffcc00; 
     text-decoration: none;
 }
