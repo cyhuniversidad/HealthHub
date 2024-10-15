@@ -1,0 +1,110 @@
+
+/* Estilos básicos para el proyecto */
+
+/* Color del texto y propiedades de la fuente */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Propiedades para enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Estilos para bordes */
+.conBorde {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de fondo */
+.anuncio {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-style: italic;
+}
+
+/* Margenes y espaciado */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Enlaces de salto */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
