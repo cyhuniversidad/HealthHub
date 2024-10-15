@@ -86,6 +86,24 @@ textarea {
     top: 0;
 }
 
+/* Estilos para el header y footer */
+header, footer {
+    background-color: #004080; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos adicionales para elementos dentro del header y footer */
+header a, footer a {
+    color: #ffcc00; 
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 480px) {
     body {
