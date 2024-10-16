@@ -112,6 +112,7 @@ header a:hover, footer a:hover {
     margin: 0;
     display: flex; /* Colocar los elementos en línea */
     justify-content: space-around; /* Espaciado entre letras */
+    background-color: #333; /* Fondo negro-gris */
 }
 
 .indice-alfabetico li {
