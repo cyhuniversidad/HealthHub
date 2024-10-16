@@ -247,5 +247,5 @@ tbody tr:nth-child(odd) {
 
 /* Hover sobre las filas */
 tbody tr:hover {
-  background-color: #ddd;
+  background-color: #42cef5;
 }
