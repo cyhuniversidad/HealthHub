@@ -104,6 +104,31 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+/* Estilo del indice alfabético de la página principal */
+
+.indice-alfabetico {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Colocar los elementos en línea */
+    justify-content: space-around; /* Espaciado entre letras */
+}
+
+.indice-alfabetico li {
+    margin: 0 10px; /* Espaciado entre las letras */
+}
+
+.indice-alfabetico li a {
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: #000; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+}
+
+.indice-alfabetico li a:hover {
+    color: #007bff; /* Color del texto al pasar el ratón */
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 480px) {
     body {
