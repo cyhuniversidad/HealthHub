@@ -219,6 +219,7 @@ header a:hover, footer a:hover {
     }
 }
 /* Estilos básicos para la tabla */
+/* Estilos básicos para la tabla */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -234,9 +235,17 @@ th, td {
 }
 
 /* Fondo de la cabecera */
-thead {
+thead th {
   background-color: #03e8fc;
   color: white;
 }
 
+/* Estilo para las filas alternas (zebra striping) */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
+/* Estilo para el hover sobre las filas */
+tr:hover {
+  background-color: #d9f1f5;
+}
