@@ -218,65 +218,33 @@ header a:hover, footer a:hover {
         max-width: 1140px;
     }
 }
-/* Espaciado y distribución */
+/* Estilos básicos para la tabla */
 table {
-  table-layout: fixed;
   width: 100%;
-}
-thead th:nth-child(1) {
-  width: 33%;
-}
-thead th:nth-child(2) {
-  width: 33%;
-}
-thead th:nth-child(3) {
-  width: 34%;
-}
-th, td {
-  padding: 20px;
-}
-
-/* Bordes */
-table, tr, th, td {
   border-collapse: collapse;
-  border: 3px solid cyan;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Tipografía */
-thead th, tfoot th, caption {
-  font-family: Arial, Helvetica, sans-serif;
-}
-th {
-  letter-spacing: 2px;
-}
-td {
-  letter-spacing: 1px;
-}
-tbody td {
+/* Bordes y relleno para las celdas */
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
   text-align: left;
 }
 
-/* Fondo */
-table {
-  background-color: #33ccff;
-}
+/* Fondo de la cabecera */
 thead {
+  background-color: #4CAF50;
   color: white;
-  text-shadow: 1px 1px 1px black;
-}
-thead th {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
 }
 
-/* Estilo cebra */
+/* Estilo cebra para las filas */
 tbody tr:nth-child(odd) {
-  background-color: #33ccff;
-}
-tbody tr:nth-child(even) {
-  background-color: #c7f2ff;
+  background-color: #f2f2f2;
 }
 
-/* Hover */
+/* Hover sobre las filas */
 tbody tr:hover {
-  background-color: white;
+  background-color: #ddd;
 }
