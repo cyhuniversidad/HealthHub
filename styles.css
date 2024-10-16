@@ -195,7 +195,60 @@ header a:hover, footer a:hover {
     color: #007bff;
     text-decoration: underline; /* Manteniendo el estilo hover */
 }
-
+/* Espaciado y distribución */
+table {
+    table-layout: auto; /* El contenido determina el ancho */
+    width: 80%; /* Reduce el ancho total de la tabla */
+    margin: 20px 0; /* Quita el centrado y la pega a la izquierda */
+  }
+  
+  /* Ancho de las columnas */
+  thead th:nth-child(1) {
+    width: 35%; /* Ajusta el ancho de la primera columna */
+  }
+  thead th:nth-child(2) {
+    width: 35%; /* Ajusta el ancho de la segunda columna */
+  }
+  thead th:nth-child(3) {
+    width: 30%; /* Ajusta el ancho de la tercera columna */
+  }
+  th, td {
+    padding: 10px; /* Reduce el padding para ahorrar espacio */
+  }
+  
+  /* Bordes */
+  table, tr, th, td {
+    border-collapse: collapse;
+    border: 2px solid cyan; /* Borde delgado */
+  }
+  
+  /* Tipografía */
+  thead th, tfoot th, caption {
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+  th, td {
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Fondo - Encabezado más oscuro */
+  thead {
+    background-color: #005f73; /* Azul oscuro para el encabezado */
+    color: white;
+  }
+  tfoot, tbody {
+    background-color: #33ccff; /* Fondo uniforme */
+  }
+  
+  /* Hover */
+  tbody tr:hover {
+    background-color: white;
+  }
 /* Responsive Design */
 @media screen and (max-width: 480px) {
     body {
@@ -217,35 +270,4 @@ header a:hover, footer a:hover {
     .container {
         max-width: 1140px;
     }
-}
-/* Estilos básicos para la tabla */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Bordes y relleno para las celdas */
-th, td {
-  padding: 12px;
-  border: 1px solid #ccc;
-  text-align: left;
-  background-color:#42cef5;
-}
-
-/* Fondo de la cabecera */
-thead {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Estilo cebra para las filas */
-tbody tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-
-/* Hover sobre las filas */
-tbody tr:hover {
-  background-color: #42cef5;
 }
