@@ -113,8 +113,9 @@ header a:hover, footer a:hover {
     border-radius: 5px; /* Bordes redondeados (opcional) */
 }
 
+
 .indice-alfabetico li {
-    margin: 0 10px; /* Espaciado entre las letras */
+    margin: 0 7px; /* Espaciado entre las letras */
 }
 
 .indice-alfabetico li a {
@@ -123,7 +124,7 @@ header a:hover, footer a:hover {
     background-color: #555; /* Fondo gris más claro */
     padding: 10px 15px; /* Espaciado dentro de cada recuadro */
     border-radius: 5px; /* Bordes redondeados en cada recuadro */
-    font-size: 20px; /* Tamaño del texto */
+    font-size: 10px; /* Tamaño del texto */
     display: inline-block; /* Hacer que el fondo abarque solo el texto */
 }
 
@@ -132,24 +133,10 @@ header a:hover, footer a:hover {
     color: #fff; /* Mantener el color del texto blanco */
 }
 
-
-.indice-alfabetico li {
-    margin: 0 10px; /* Espaciado entre las letras */
-}
-
-.indice-alfabetico li a {
-    text-decoration: none; /* Quitar el subrayado de los enlaces */
-    color: #fff; /* Color del texto blanco */
-    background-color: #555; /* Fondo gris más claro */
-    padding: 10px 15px; /* Espaciado dentro de cada recuadro */
-    border-radius: 5px; /* Bordes redondeados en cada recuadro */
-    font-size: 20px; /* Tamaño del texto */
-    display: inline-block; /* Hacer que el fondo abarque solo el texto */
-}
-
-.indice-alfabetico li a:hover {
-    background-color: #777; /* Cambiar a un gris más claro al pasar el ratón */
+.indice-alfabetico h2 {
+    background-color: #333; /* Fondo negro-gris */
     color: #fff; /* Mantener el color del texto blanco */
+    
 }
 
 /* Responsive Design */
