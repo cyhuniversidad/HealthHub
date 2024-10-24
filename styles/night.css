@@ -1,0 +1,284 @@
+:root {
+    --primary-color: rgb(80, 80, 255);
+    --secondary-color: #eee;
+    --background-color: #111;
+    --header-footer-bg-color: #333;
+    --header-footer-text-color: #fff;
+}
+header img{
+    filter: invert(1);
+}
+div{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+/* Color del texto y propiedades de la fuente */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Propiedades para enlaces */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Estilos para bordes */
+.conBorde {
+    background-color: #222; 
+    border: 1px solid #555; 
+    color: var(--secondary-color); 
+    padding: 15px;
+    font-style: italic;
+}
+
+
+/* Estilos de anuncio */
+.anuncio {
+    background-color: #222; 
+    border: 1px solid #555; 
+    color: var(--secondary-color); 
+    padding: 15px;
+    font-style: italic;
+}
+
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #222; /* Fondo oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: var(--secondary-color); /* Texto claro */
+}
+
+label {
+    font-weight: bold;
+    color: var(--secondary-color); /* Texto claro */
+    margin-bottom: 5px;
+}
+
+/* Estilos para los inputs de texto, email, fecha, textarea y select */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #555; /* Bordes oscuros */
+    border-radius: 5px;
+    background-color: #333; /* Fondo oscuro */
+    color: var(--secondary-color); /* Texto claro */
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para los textarea */
+textarea {
+    resize: vertical;
+    background-color: #333; /* Fondo oscuro */
+    color: var(--secondary-color); /* Texto claro */
+}
+
+/* Estilos para los botones radio */
+input[type="radio"] {
+    margin-right: 10px;
+    background-color: #333; /* Fondo oscuro */
+}
+
+/* Estilos para las casillas de verificación */
+input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #333; /* Fondo oscuro */
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: var(--primary-color); /* Color primario (azul en modo noche) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* estilos de las migas de pan */
+nav[aria-label="breadcrumbs"] p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+nav[aria-label="breadcrumbs"] a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav[aria-label="breadcrumbs"] a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el header y footer */
+header, footer {
+    background-color: var(--header-footer-bg-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos adicionales para elementos dentro del header y footer */
+header h1, header a, header h2 {
+    color: var(--header-footer-text-color);
+    text-decoration: none;
+}
+
+footer a{
+    color: var(--primary-color)
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* Enlaces de salto */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: -9999px; /* Mueve el enlace fuera de la pantalla */
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hacer el skip-link visible cuando esté enfocado */
+.skip-link:focus {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Devuelve el enlace a la pantalla */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilo del indice alfabético de la página principal */
+.indice-alfabetico {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.indice-alfabetico li {
+    margin: 0 10px;
+}
+
+.indice-alfabetico a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.indice-alfabetico a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Espaciado y distribución */
+table {
+    table-layout: auto;
+    width: 80%;
+    margin: 20px 0;
+    background-color: #222; /* Fondo oscuro */
+    color: var(--secondary-color); /* Texto claro */
+    border: 1px solid #555; /* Bordes oscuros */
+}
+
+thead {
+    background-color: #333; /* Encabezado oscuro */
+    color: var(--secondary-color); /* Texto claro */
+}
+
+tfoot, tbody {
+    background-color: #222; /* Fondo oscuro */
+    color: var(--secondary-color); /* Texto claro */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #555; /* Bordes más oscuros */
+}
+
+tbody tr:hover {
+    background-color: #333; /* Color de fondo al pasar el cursor */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

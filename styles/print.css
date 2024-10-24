@@ -1,0 +1,139 @@
+@media print {
+    /* Establecer márgenes  */
+    body {
+        margin: 2cm; /* Márgenes adecuados para papel A4 */
+        font-size: 12pt; /* Tamaño de fuente en puntos para impresión */
+        line-height: 1.4;
+        color: #000000; /* Asegura que el texto sea negro para legibilidad */
+        background-color: #ffffff; /* Fondo blanco para impresión */
+        max-width: 18cm; /* Limitar el ancho del contenido para mejorar la legibilidad en impresión */
+    }
+
+    /* Eliminar elementos innecesarios para impresión */
+    nav, 
+    header,  
+    .skip-link, 
+    .indice-alfabetico, 
+    button, 
+    input, 
+    textarea, 
+    aside {
+        display: none !important; /* Ocultar navegación, botones y aside */
+    }
+
+    /* Asegurar que los enlaces se vean de forma clara en azul */
+    a {
+        color: #0000FF !important; /* Enlaces en azul para impresión */
+        text-decoration: underline; /* Subrayar enlaces impresos */
+    }
+
+    /* Mostrar las URL después de los enlaces para claridad */
+
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: #333333; 
+    }
+
+
+    /* Optimizar el tamaño de títulos */
+    h1, h2, h3 {
+        color: #000000; 
+        page-break-after: avoid; 
+    }
+
+    h1 {
+        font-size: 24pt; /* Ajustar tamaño de encabezado para impresión */
+    }
+
+    h2 {
+        font-size: 20pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+
+    /* Ajustar márgenes de párrafos */
+    p {
+        margin-bottom: 0.8cm;
+        orphans: 3; 
+        widows: 3; 
+    }
+
+
+    /* Optimizar tablas para impresión */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1pt solid #000000; 
+        margin-bottom: 1cm;
+    }
+
+    th, td {
+        border: 1pt solid #000000; 
+        padding: 0.4cm;
+        font-size: 10pt; 
+    }
+
+    /* Evitar roturas de página dentro de las tablas */
+    table, tr, td {
+        page-break-inside: avoid;
+    }
+
+    /* Optimizar las listas */
+    ul, ol {
+        padding-left: 1cm;
+    }
+
+    li {
+        margin-bottom: 0.5cm;
+    }
+
+    /* Controlar el tamaño de imágenes importantes */
+    img.important {
+        display: block !important; /* Mostrar solo las imágenes importantes */
+        max-width: 100%;
+        height: auto; 
+    }
+
+    /* Quitar imágenes decorativas */
+    img:not(.important) {
+        display: none; /* Ocultar imágenes decorativas */
+    }
+
+    /* Quitar colores de fondo y bordes */
+    * {
+        background: none !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* Evitar cortes de página innecesarios */
+    section, article, blockquote {
+        page-break-inside: avoid;
+    }
+
+    /* Controlar rotura de página en títulos */
+    h1, h2, h3 {
+        page-break-after: avoid; /* Evita que un título quede separado de su contenido */
+    }
+
+    /* Añadir URL de la página al final */
+    footer::after {
+        content: "Página impresa desde: " attr(href);
+        display: block;
+        margin-top: 2cm;
+        font-size: 10pt;
+        text-align: center;
+        color: #333;
+    }
+
+    /* Controlar la rotura de páginas para formularios que sean importantes */
+    form.important {
+        page-break-inside: avoid;
+        border: 1pt solid #000000;
+        padding: 1cm;
+    }
+}
