@@ -256,8 +256,8 @@ th, td {
 }
 
 #video-amara {
-    width="560";
-    height="315";
+    width: 560 ;
+    height: 315 ;
     display: flex;
     justify-content: center; 
     align-items: center;
