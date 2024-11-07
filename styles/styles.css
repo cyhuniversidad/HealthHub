@@ -255,6 +255,15 @@ th, td {
     color: black;
 }
 
+#video-amara {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 500px; 
+}
+
 /* Fondo - Encabezado más oscuro */
 thead {
     background-color: #005f73;
